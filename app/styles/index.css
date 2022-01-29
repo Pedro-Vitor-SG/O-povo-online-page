@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=PT+Serif&display=swap");
+:root {
+  --primary-blue: #0079c1;
+  --secondary-blue: #314163;
+  --form-blue: #e8f8ff;
+  --button-form-blue: #4a85af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  background-color: var(--primary-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 0px;
+
+  margin-bottom: 3rem;
+}
+header img {
+  height: 30px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0px 0.8rem;
+}
+header nav ul li a {
+  color: #eee;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  transition: 0.2s;
+}
+header nav ul li a:hover {
+  color: #ddd;
+}
+.return_page {
+  color: var(--secondary-blue);
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  position: relative;
+  left: 280px;
+}
+main {
+  width: 100%;
+  margin: 3rem 0px 3rem;
+  color: var(--secondary-blue);
+  font-family: "Oswald", sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+.section_vacancies {
+  width: 30%;
+}
+.section_vacancies h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.section_vacancies .vague_details h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+.section_vacancies .vague_details div {
+  margin-bottom: 1.5rem;
+}
+.section_vacancies .vague_details h4 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.section_vacancies .vague_details p {
+  font-family: "PT Serif", serif;
+  line-height: 22px;
+}
+.section_vacancies .container_form {
+  padding: 0.8rem;
+  background-color: var(--form-blue);
+  text-align: end;
+}
+.section_vacancies .container_form form {
+  border: 1px solid var(--secondary-blue);
+  padding: 1.5rem 1rem;
+  text-align: start;
+}
+.section_vacancies .container_form form h3 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.section_vacancies .container_form form label {
+  font-weight: 500;
+}
+.section_vacancies .container_form form input {
+  display: block;
+  background-color: var(--form-blue);
+  border: 1px solid var(--secondary-blue);
+  outline: none;
+  border-radius: 3px;
+  width: 95%;
+  padding: 0.3rem 0.5rem;
+  margin: 0.5rem 0px 0.8rem 0px;
+}
+.section_vacancies .container_form form div {
+  display: flex;
+}
+.section_vacancies .container_form form fieldset {
+  border: none;
+}
+.section_vacancies .container_form form .one {
+  width: 35%;
+  margin-right: 1.5rem;
+}
+.section_vacancies .container_form form .two {
+  width: 55%;
+  margin-bottom: 2rem;
+}
+.section_vacancies .container_form form p {
+  font-weight: 500;
+}
+.section_vacancies .container_form form .upload_curriculum {
+  display: flex;
+  align-items: center;
+}
+.section_vacancies .container_form form .upload_curriculum .file_label {
+  margin-right: 0.5rem;
+  background-color: var(--button-form-blue);
+  color: #eee;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.section_vacancies .container_form form .upload_curriculum input[type="file"] {
+  display: none;
+}
+.section_vacancies .container_form form .upload_curriculum span {
+  font-size: 0.8rem;
+  width: 50%;
+}
+
+.section_vacancies .container_form form .error_file {
+  font-size: 0.8rem;
+  color: #f00;
+}
+.section_vacancies .container_form button {
+  border: none;
+  outline: none;
+  background-color: var(--secondary-blue);
+  color: #eee;
+  padding: 0.3rem 1.2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  margin: 1.5rem 0px 1rem 0px;
+}
+.section_vacancies .container_form button:hover {
+  cursor: pointer;
+}
+.illustration {
+  background-color: var(--secondary-blue);
+  width: 25%;
+  margin-left: 5rem;
+}
+.illustration img {
+  position: relative;
+  right: 95px;
+  top: 300px;
+}
+footer {
+  width: 100%;
+  background-color: #0079c1;
+  color: #eee;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0px;
+}
+footer img {
+  height: 30px;
+  margin-left: 13rem;
+}
+footer span {
+  margin-right: 13rem;
+}
+
+@media (max-width: 987px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav ul {
+    margin-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+  }
+  header nav ul li {
+    margin-bottom: 1rem;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  .return_page {
+    left: 10px;
+  }
+  main {
+    margin-bottom: 5rem;
+    color: var(--secondary-blue);
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section_vacancies {
+    width: 100%;
+    text-align: center;
+  }
+  main .section_vacancies h1 {
+    font-size: 2.5rem;
+  }
+  main .section_vacancies .vague_details h2 {
+    font-size: 1.2rem;
+  }
+  main .section_vacancies .vague_details div {
+    font-size: 0.8rem;
+  }
+  .section_vacancies .container_form form {
+    font-size: 0.8rem;
+  }
+  .section_vacancies .container_form form .one {
+    width: 35%;
+  }
+  .section_vacancies .container_form form .two {
+    width: 53%;
+  }
+  .section_vacancies .container_form form .upload_curriculum .file_label {
+    background-color: var(--button-form-blue);
+    color: #eee;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .section_vacancies .container_form form .upload_curriculum span {
+    font-size: 0.6rem;
+  }
+  .section_vacancies .container_form button {
+    font-size: 0.8rem;
+  }
+  .illustration {
+    background-color: var(--secondary-blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .illustration img {
+    width: 50%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+  footer {
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer img {
+    height: 20px;
+    margin-left: 1rem;
+  }
+  footer span {
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 355px) {
+  .section_vacancies .container_form form .one {
+    width: 35%;
+  }
+  .section_vacancies .container_form form .two {
+    width: 55%;
+  }
+}
+@media (min-width: 420px) {
+ 
+n_vacancies .container_form form .one {
+    width: 38%;
+  }
+  .section_vacancies .container_form form .two {
+    width: 53%;
+  }
+}
+@media (min-width: 485px) {
+  .section_vacancies .container_form form .one {
+    width: 40%;
+  }
+  .section_vacancies .container_form form .two {
+    width: 52%;
+  }
+}
+@media (min-width: 574px) {
+  .section_vacancies .container_form form .one {
+    width: 39.8%;
+  }
+  .section_vacancies .container_form form .two {
+    width: 53%;
+  }
+}
+@media (min-width: 635px) {
+  .section_vacancies .container_form form .one {
+    width: 35%;
+  }
+
+  .section_vacancies .container_form form .two {
+    width: 55%;
+  }
+}

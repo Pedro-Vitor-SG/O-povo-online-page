@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../js/index.js" defer></script>
+    <title>O povo</title>
+</head>
+
+<body>
+    
+        <header class="header"  role="complementary">
+            <img src="../assets/logo_opovo.png" alt="Logo OPovo Online" >
+
+            <nav class="nav_menu" role="navigation">
+                <ul class="container_list" role="menubar">
+                    <li role="menuitem">
+                        <a href="#">
+                            Sobre
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            Vídeo
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Propósito
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Diversidade
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Valores
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Áreas de Atuação
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Depoimentos
+                        </a>
+                    </li>
+                    <li  role="menuitem">
+                        <a href="#">
+                            Vagas
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <a href="#" class="return_page">
+            <img src="../assets/arrow.svg" alt="icone flecha"> Voltar
+        </a>
+
+        <main class="main" role="main">
+         
+            <section class="section_vacancies">
+
+                <h1>Vagas</h1>
+                <section class="vague_details">
+                    <h2>Consultor de negócios - vendas publicidade</h2>
+
+                    <div class="requirements">
+                        <h4>Requisitos</h4>
+                        <p>
+                            Gradução em Marketing ou Publicidade e Propaganda. Experiência com Vendas, Conhecimentos de
+                            gestão de indicadores, negociação, informática
+                        </p>
+                    </div>
+
+                    <div class="activities">
+                        <h4>Atividades</h4>
+                        <p>
+                            Planejamento de vendas, visitas a clientes, desenvolvimento de propostas comerciais e plano
+                            de
+                            mídias, acompanhamento de indicadores e elaboração de orçamentos.
+                        </p>
+                    </div>
+
+                    <div class="candidate_profile">
+                        <h4>
+                            Perfil do candidato
+                        </h4>
+                        <p>
+                            Comunicativo, negociador, ágil e responsável.
+                        </p>
+                    </div>
+
+                    <div class="working_hours">
+                        <h4> Harário de trabalho</h4>
+                        <p>8 - 18h</p>
+                    </div>
+                </section>
+
+                <div class="container_form">
+                    <form id="myform" role="form">
+                        <h3>Envie seu currículo</h3>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" class="first_type">
+
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" class="first_type">
+
+                        <label for="cep">Cep</label>
+                        <input type="text" name="cep" id="cep" class="first_type" data-js="cep">
+
+                        <label for="address">
+                            Endereço
+                        </label>
+                        <input type="text" name="address" id="address">
+
+
+                        <div class="group">
+                            <fieldset class="one">
+                                <label for="phone">
+                                    Número
+                                </label>
+
+                                <input type="text" name="phone" id="phone" data-js="phone">
+
+                                <label for="city">
+                                    Cidade
+                                </label>
+                                <input type="text" name="city" id="city">
+                            </fieldset>
+
+
+
+                            <fieldset class="two">
+                                <label for="district">Bairro</label>
+                                <input type="text" name="district" id="district">
+
+                                <label for="state">Estado</label>
+                                <input type="text" name="state" id="state">
+                            </fieldset>
+
+                        </div>
+
+                        <p>Currículo</p>
+                        <fieldset class="upload_curriculum">
+                            <label for="curriculum" class="file_label">Anexar currículo</label>
+                            <span >
+                                Todos os campos são obrigatórios Tamanho máximo para upload - 10mb Tipo de arquivo: .pdf
+                                ou.
+                                doc
+                            </span>
+                            <input maxlength="10mb" accept=".pdf, .doc" type="file" name="curriculum" id="curriculum"
+                                class="cv">
+
+
+                        </fieldset>
+                        <span class="error_file"></span>
+
+
+                    </form>
+
+                    <button type="submit" form="myform">Enviar currículo</button>
+                </div>
+            </section>
+
+            <div class="illustration" role="banner">
+                <img src="../assets/vagas-01-01.png" alt="illustração">
+            </div>
+        </main>
+
+        <footer role="complementary">
+            <img src="../assets/logo_opovo.png" alt="Logo O povo Online">
+
+            <span role="contentinfo">
+                Copyright&copy; 1997-2016
+            </span>
+        </footer>
+</body>
+
+</html>
